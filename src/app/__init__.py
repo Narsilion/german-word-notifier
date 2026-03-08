@@ -1,0 +1,1 @@
+"""German Word Notifier package."""
