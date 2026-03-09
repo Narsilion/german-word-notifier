@@ -3,11 +3,13 @@ from __future__ import annotations
 import argparse
 import sqlite3
 import sys
+from datetime import UTC, datetime
 from pathlib import Path
 
 from app import db, notifier, selector
 from app.config import load_settings
 from app.models import WordRecord
+from app.page_renderer import write_word_page
 from app.services.importer import import_csv
 
 
@@ -48,6 +50,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     show_parser = subparsers.add_parser("show-notification", help="Send a manual macOS notification")
     show_parser.add_argument("--word", required=True)
+    show_parser.add_argument("--article")
     show_parser.add_argument("--translation")
     show_parser.add_argument("--definition")
     show_parser.add_argument("--example")
@@ -109,7 +112,7 @@ def _list_words(connection: sqlite3.Connection, *, limit: int) -> int:
 
     for word in words:
         print(
-            f"{word.word} | translation={word.translation or '-'} | "
+            f"{word.display_word} | translation={word.translation or '-'} | "
             f"shown={word.times_shown} | last_shown_at={word.last_shown_at or '-'}"
         )
     return 0
@@ -126,6 +129,7 @@ def _manual_word_record(args: argparse.Namespace) -> WordRecord:
     return WordRecord(
         id=0,
         word=args.word,
+        article=args.article,
         translation=args.translation,
         short_definition=args.definition,
         part_of_speech=None,
@@ -151,25 +155,38 @@ def _notify_word(
     persist: bool,
 ) -> int:
     title, subtitle, body = notifier.build_notification_payload(word, settings)
+    page_path = write_word_page(settings.detail_pages_dir, word)
 
     if dry_run:
+        print(f"{_timestamp()} DRY_RUN word='{word.display_word}'", flush=True)
         print(f"title: {title}")
         print(f"subtitle: {subtitle}")
         print(f"body: {body}")
+        print(f"page: {page_path}")
         return 0
 
     try:
-        notifier.send_notification(settings, title, subtitle, body)
+        print(f"{_timestamp()} RUN_START word='{word.display_word}'", flush=True)
+        backend = notifier.send_notification(settings, title, subtitle, body, page_path=page_path)
         if persist and word.id:
             db.mark_word_shown(connection, word.id)
             db.record_notification_result(connection, word.id, "sent", body)
     except notifier.NotificationError as exc:
         if persist and word.id:
             db.record_notification_result(connection, word.id, "failed", str(exc))
+        print(
+            f"{_timestamp()} RUN_FAILED word='{word.display_word}' error={exc}",
+            file=sys.stderr,
+            flush=True,
+        )
         raise
 
-    print(f"Sent notification for '{word.word}'")
+    print(f"{_timestamp()} RUN_SENT word='{word.display_word}' backend='{backend}'", flush=True)
     return 0
+
+
+def _timestamp() -> str:
+    return datetime.now(UTC).replace(microsecond=0).isoformat()
 
 
 if __name__ == "__main__":

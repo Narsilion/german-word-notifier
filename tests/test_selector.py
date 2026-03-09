@@ -5,6 +5,7 @@ def test_placeholder() -> None:
     word = WordRecord(
         id=1,
         word="Haus",
+        article="das",
         translation="house",
         short_definition="A building",
         part_of_speech="noun",
@@ -20,3 +21,4 @@ def test_placeholder() -> None:
         is_active=1,
     )
     assert word.word == "Haus"
+    assert word.display_word == "das Haus"

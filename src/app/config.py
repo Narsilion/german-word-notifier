@@ -10,6 +10,7 @@ class Settings:
     project_root: Path
     db_path: Path
     default_csv_path: Path
+    detail_pages_dir: Path
     notification_title_prefix: str
     max_body_length: int
     include_example: bool
@@ -25,11 +26,15 @@ def load_settings() -> Settings:
     default_csv = _resolve_path(
         project_root, _get_value("GWN_DEFAULT_CSV", env_values, "./data/words.csv")
     )
+    detail_pages_dir = _resolve_path(
+        project_root, _get_value("GWN_DETAIL_PAGES_DIR", env_values, "./.generated-pages")
+    )
 
     return Settings(
         project_root=project_root,
         db_path=db_path,
         default_csv_path=default_csv,
+        detail_pages_dir=detail_pages_dir,
         notification_title_prefix=_get_value("GWN_NOTIFICATION_TITLE_PREFIX", env_values, ""),
         max_body_length=int(_get_value("GWN_MAX_BODY_LENGTH", env_values, "220")),
         include_example=_get_bool(_get_value("GWN_INCLUDE_EXAMPLE", env_values, "true")),

@@ -8,6 +8,7 @@ from app import db
 
 REQUIRED_COLUMNS = {"word", "translation", "short_definition"}
 OPTIONAL_COLUMNS = {
+    "article",
     "part_of_speech",
     "example_de",
     "example_translation",
@@ -35,6 +36,7 @@ def import_csv(connection, csv_path: Path) -> int:
 
             payload = {
                 "word": row["word"].strip(),
+                "article": _clean(row.get("article")),
                 "translation": _clean(row.get("translation")),
                 "short_definition": _clean(row.get("short_definition")),
                 "part_of_speech": _clean(row.get("part_of_speech")),

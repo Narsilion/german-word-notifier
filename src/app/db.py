@@ -11,6 +11,7 @@ SCHEMA = """
 CREATE TABLE IF NOT EXISTS words (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   word TEXT NOT NULL UNIQUE,
+  article TEXT,
   translation TEXT,
   short_definition TEXT,
   part_of_speech TEXT,
@@ -46,6 +47,7 @@ def connect(db_path: Path) -> sqlite3.Connection:
 
 def init_db(connection: sqlite3.Connection) -> None:
     connection.executescript(SCHEMA)
+    _ensure_column(connection, "words", "article", "TEXT")
     connection.commit()
 
 
@@ -54,10 +56,11 @@ def upsert_word(connection: sqlite3.Connection, payload: dict[str, object]) -> N
     connection.execute(
         """
         INSERT INTO words (
-          word, translation, short_definition, part_of_speech, example_de,
+          word, article, translation, short_definition, part_of_speech, example_de,
           example_translation, source, tags, difficulty, created_at, updated_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(word) DO UPDATE SET
+          article = excluded.article,
           translation = excluded.translation,
           short_definition = excluded.short_definition,
           part_of_speech = excluded.part_of_speech,
@@ -70,6 +73,7 @@ def upsert_word(connection: sqlite3.Connection, payload: dict[str, object]) -> N
         """,
         (
             payload["word"],
+            payload.get("article"),
             payload.get("translation"),
             payload.get("short_definition"),
             payload.get("part_of_speech"),
@@ -181,6 +185,7 @@ def _row_to_word(row: sqlite3.Row) -> WordRecord:
     return WordRecord(
         id=row["id"],
         word=row["word"],
+        article=row["article"],
         translation=row["translation"],
         short_definition=row["short_definition"],
         part_of_speech=row["part_of_speech"],
@@ -199,3 +204,14 @@ def _row_to_word(row: sqlite3.Row) -> WordRecord:
 
 def _now() -> str:
     return datetime.now(UTC).isoformat()
+
+
+def _ensure_column(
+    connection: sqlite3.Connection, table_name: str, column_name: str, column_type: str
+) -> None:
+    columns = {
+        row["name"]
+        for row in connection.execute(f"PRAGMA table_info({table_name})").fetchall()
+    }
+    if column_name not in columns:
+        connection.execute(f"ALTER TABLE {table_name} ADD COLUMN {column_name} {column_type}")

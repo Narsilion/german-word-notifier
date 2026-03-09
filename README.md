@@ -1,6 +1,6 @@
 # German Word Notifier
 
-Local-first Python MVP for macOS that shows native notifications with a German word, its translation, and a short definition.
+Local-first Python MVP for macOS that shows native notifications with a German word, its article when available, its translation, and a short definition, and can open a local study page when you click the notification.
 
 ## What it does
 
@@ -11,7 +11,7 @@ The app:
 - picks the next word with a simple least-shown selector
 - sends one native macOS notification at a time
 
-The starter CSV currently contains `100` words in [data/words.csv](/Users/darkcreation/Documents/german-word-notifier/data/words.csv).
+The starter CSV currently contains `105` words in [data/words.csv](/Users/darkcreation/Documents/german-word-notifier/data/words.csv).
 
 ## Requirements
 
@@ -35,6 +35,7 @@ They appear in macOS:
 
 - as a banner in the top-right corner
 - in Notification Center if you miss the banner
+- clicking the notification or the `Open Card` action opens a generated HTML study page for that word
 
 If you do not see them:
 
@@ -47,8 +48,9 @@ Important:
 
 - if you run `./gwn` from Terminal, Terminal must be allowed to send notifications
 - if you run it from another shell app, that app needs permission instead
-- notifications are sent with `osascript`
-- clicking the notification may open Script Editor-related UI because macOS treats the sender as AppleScript
+- notifications are sent with `terminal-notifier` when available so clicks can open the study page
+- if `terminal-notifier` is unavailable, the app falls back to the built-in notification path
+- the generated HTML pages are stored in `.generated-pages/` by default
 
 ## First run
 
@@ -77,7 +79,7 @@ Imports words from a CSV file into the local database. If `<path>` is omitted, t
 
 `./gwn list-words`
 
-Prints words currently stored in the database, including translation, how many times each word was shown, and when it was last shown.
+Prints words currently stored in the database, including the article when available, translation, how many times each word was shown, and when it was last shown.
 
 `./gwn list-words --limit 50`
 
@@ -100,6 +102,7 @@ Selects the next word and prints the generated notification payload:
 - title
 - subtitle
 - body
+- page path
 
 This is the safest way to verify the selector and message formatting.
 
@@ -107,11 +110,11 @@ This is the safest way to verify the selector and message formatting.
 
 Selects the next word from the database and sends a real macOS notification.
 
-`./gwn show-notification --word Haus --translation house --definition "A building for people to live in."`
+`./gwn show-notification --word Haus --article das --translation house --definition "A building for people to live in."`
 
 Sends a manual test notification without using the database selector.
 
-`./gwn show-notification --word Haus --translation house --definition "A building for people to live in." --example "Das Haus ist alt."`
+`./gwn show-notification --word Haus --article das --translation house --definition "A building for people to live in." --example "Das Haus ist alt."`
 
 Same as above, but also includes one example sentence.
 
@@ -123,10 +126,16 @@ Preview the next notification:
 ./gwn run-once --dry-run
 ```
 
+Open the generated HTML card directly:
+
+```bash
+open .generated-pages/das-haus.html
+```
+
 Send a manual test notification:
 
 ```bash
-./gwn show-notification --word Haus --translation house --definition "A building for people to live in." --example "Das Haus ist alt."
+./gwn show-notification --word Haus --article das --translation house --definition "A building for people to live in." --example "Das Haus ist alt."
 ```
 
 Inspect current state:
@@ -163,8 +172,10 @@ tail -f /tmp/gwn.stdout.log
 tail -f /tmp/gwn.stderr.log
 ```
 
+The scheduler logs now include UTC timestamps and event markers such as `RUN_START`, `RUN_SENT`, and `RUN_FAILED`, plus the notification backend used, so you can verify exactly when each scheduled run executed.
+
 ## Notes
 
 - The app stores data in SQLite in `gwn.db` by default.
-- Notifications are sent through `osascript`.
+- Notification detail pages are generated locally in `.generated-pages` by default.
 - The current MVP is intentionally local-first and does not require any external API.

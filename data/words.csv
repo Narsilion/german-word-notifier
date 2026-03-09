@@ -1,106 +1,106 @@
-word,translation,short_definition,part_of_speech,example_de,example_translation,tags,difficulty
-Haus,house,A building where people live.,noun,Das Haus ist alt.,The house is old.,home,1
-Wasser,water,A clear liquid for drinking.,noun,Ich trinke Wasser.,I drink water.,daily-life,1
-gehen,to go,To move from one place to another.,verb,Wir gehen nach Hause.,We are going home.,verbs,1
-Buch,book,A written work with pages.,noun,Das Buch ist interessant.,The book is interesting.,study,1
-heute,today,The current day.,adverb,Heute lerne ich Deutsch.,Today I study German.,time,1
-sprechen,to speak,To say words aloud.,verb,Sie spricht sehr langsam.,She speaks very slowly.,verbs,1
-Freund,friend,A person you like and trust.,noun,Mein Freund wohnt in Berlin.,My friend lives in Berlin.,people,1
-schnell,fast,Moving with high speed.,adjective,Der Zug ist sehr schnell.,The train is very fast.,descriptions,2
-essen,to eat,To consume food.,verb,Wir essen zusammen.,We eat together.,verbs,1
-Fenster,window,An opening in a wall with glass.,noun,Das Fenster ist offen.,The window is open.,home,1
-Auto,car,A road vehicle with an engine.,noun,Das Auto ist neu.,The car is new.,transport,1
-Baum,tree,A tall plant with a trunk.,noun,Der Baum ist hoch.,The tree is tall.,nature,1
-Stadt,city,A large town with many people.,noun,Die Stadt ist laut.,The city is loud.,places,1
-Dorf,village,A small settlement in the countryside.,noun,Mein Dorf ist ruhig.,My village is quiet.,places,1
-Schule,school,A place where people learn.,noun,Die Schule beginnt um acht.,School starts at eight.,study,1
-Lehrer,teacher,A person who teaches students.,noun,Der Lehrer ist nett.,The teacher is nice.,people,1
-Student,student,A person who studies.,noun,Der Student liest viel.,The student reads a lot.,people,1
-Arbeit,work,Activity done for a job.,noun,Die Arbeit ist schwer.,The work is hard.,work,1
-lernen,to learn,To gain knowledge or skill.,verb,Ich lerne jeden Tag.,I learn every day.,study,1
-schreiben,to write,To put words on paper or screen.,verb,Er schreibt einen Brief.,He writes a letter.,verbs,1
-lesen,to read,To look at written words and understand them.,verb,Sie liest ein Buch.,She reads a book.,verbs,1
-sehen,to see,To notice with the eyes.,verb,Ich sehe den Hund.,I see the dog.,verbs,1
-hoeren,to hear,To notice sound with the ears.,verb,Wir hoeren Musik.,We hear music.,verbs,1
-kommen,to come,To move toward a place.,verb,Er kommt spaet.,He comes late.,verbs,1
-machen,to do,To perform an action.,verb,Was machst du heute?,What are you doing today?,verbs,1
-geben,to give,To hand something to someone.,verb,Ich gebe dir das Buch.,I give you the book.,verbs,2
-nehmen,to take,To get something into your hand.,verb,Nimm bitte den Stuhl.,Please take the chair.,verbs,2
-finden,to find,To discover something.,verb,Ich finde den Schluessel.,I find the key.,verbs,2
-fragen,to ask,To request information.,verb,Sie fragt den Lehrer.,She asks the teacher.,verbs,1
-antworten,to answer,To reply to a question.,verb,Er antwortet sofort.,He answers at once.,verbs,2
-wohnen,to live,To have your home in a place.,verb,Wir wohnen in Wien.,We live in Vienna.,verbs,1
-leben,to live,To be alive or exist.,verb,Sie lebt allein.,She lives alone.,verbs,2
-lieben,to love,To feel deep affection.,verb,Ich liebe diesen Film.,I love this movie.,feelings,1
-brauchen,to need,To require something.,verb,Wir brauchen mehr Zeit.,We need more time.,verbs,1
-kaufen,to buy,To pay money for something.,verb,Ich kaufe Brot.,I buy bread.,shopping,1
-verkaufen,to sell,To exchange something for money.,verb,Er verkauft sein Fahrrad.,He sells his bicycle.,shopping,2
-zahlen,to pay,To give money for something.,verb,Ich zahle mit Karte.,I pay by card.,shopping,1
-kochen,to cook,To prepare food with heat.,verb,Meine Mutter kocht Suppe.,My mother cooks soup.,food,1
-trinken,to drink,To take liquid into the mouth.,verb,Wir trinken Kaffee.,We drink coffee.,food,1
-Brot,bread,A baked food made from flour.,noun,Das Brot ist frisch.,The bread is fresh.,food,1
-Milch,milk,A white drink from animals.,noun,Die Milch ist kalt.,The milk is cold.,food,1
-Kaffee,coffee,A dark hot drink.,noun,Der Kaffee ist heiss.,The coffee is hot.,food,1
-Tee,tea,A hot drink made from leaves.,noun,Ich trinke Tee am Abend.,I drink tea in the evening.,food,1
-Apfel,apple,A round fruit with a stem.,noun,Der Apfel ist rot.,The apple is red.,food,1
-Hund,dog,A common domestic animal.,noun,Der Hund schlaeft.,The dog is sleeping.,animals,1
-Katze,cat,A small domestic animal.,noun,Die Katze spielt.,The cat is playing.,animals,1
-Vogel,bird,An animal with feathers and wings.,noun,Der Vogel singt.,The bird sings.,animals,1
-Fisch,fish,An animal that lives in water.,noun,Der Fisch schwimmt schnell.,The fish swims fast.,animals,1
-Kind,child,A young person.,noun,Das Kind lacht.,The child laughs.,people,1
-Mann,man,An adult male person.,noun,Der Mann wartet hier.,The man is waiting here.,people,1
-Frau,woman,An adult female person.,noun,Die Frau arbeitet im Buero.,The woman works in the office.,people,1
-Familie,family,A group of close relatives.,noun,Meine Familie ist gross.,My family is big.,people,1
-Mutter,mother,A female parent.,noun,Meine Mutter liest gern.,My mother likes reading.,people,1
-Vater,father,A male parent.,noun,Mein Vater kocht heute.,My father is cooking today.,people,1
-Bruder,brother,A male sibling.,noun,Mein Bruder spielt Fussball.,My brother plays football.,people,1
-Schwester,sister,A female sibling.,noun,Meine Schwester singt gut.,My sister sings well.,people,1
-Tag,day,A period of twenty four hours.,noun,Der Tag ist lang.,The day is long.,time,1
-Nacht,night,The dark part of the day.,noun,Die Nacht ist kalt.,The night is cold.,time,1
-Morgen,morning,The early part of the day.,noun,Am Morgen trinke ich Kaffee.,In the morning I drink coffee.,time,1
-Abend,evening,The later part of the day.,noun,Am Abend lese ich.,In the evening I read.,time,1
-Woche,week,A period of seven days.,noun,Die Woche ist kurz.,The week is short.,time,1
-Monat,month,One of twelve parts of a year.,noun,Dieser Monat ist stressig.,This month is stressful.,time,2
-Jahr,year,A period of twelve months.,noun,Das Jahr geht schnell vorbei.,The year passes quickly.,time,1
-Zeit,time,Measured passing of moments.,noun,Ich habe keine Zeit.,I have no time.,time,1
-Uhr,clock,A device that shows time.,noun,Die Uhr ist teuer.,The clock is expensive.,time,1
-Minute,minute,Sixty seconds of time.,noun,Warte eine Minute.,Wait one minute.,time,1
-Strasse,street,A public road in a town.,noun,Die Strasse ist voll.,The street is full.,places,1
-Weg,way,A route or direction.,noun,Das ist der richtige Weg.,That is the right way.,places,1
-Bahnhof,station,A place where trains stop.,noun,Der Bahnhof ist nah.,The station is near.,transport,1
-Zug,train,A vehicle that runs on rails.,noun,Der Zug kommt gleich.,The train arrives soon.,transport,1
-Bus,bus,A large road vehicle for many people.,noun,Der Bus ist spaet.,The bus is late.,transport,1
-Fahrrad,bicycle,A vehicle with two wheels.,noun,Mein Fahrrad ist blau.,My bicycle is blue.,transport,1
-Flugzeug,airplane,A vehicle that flies in the sky.,noun,Das Flugzeug landet jetzt.,The airplane is landing now.,transport,2
-Zimmer,room,A part of a building inside walls.,noun,Mein Zimmer ist klein.,My room is small.,home,1
-Tuer,door,A movable barrier for an entrance.,noun,Die Tuer ist zu.,The door is closed.,home,1
-Tisch,table,A piece of furniture with a flat top.,noun,Das Buch liegt auf dem Tisch.,The book lies on the table.,home,1
-Stuhl,chair,A seat for one person.,noun,Der Stuhl ist bequem.,The chair is comfortable.,home,1
-Bett,bed,A piece of furniture for sleeping.,noun,Das Bett ist weich.,The bed is soft.,home,1
-Kueche,kitchen,A room where food is prepared.,noun,Die Kueche ist sauber.,The kitchen is clean.,home,1
-Garten,garden,A piece of ground for plants.,noun,Der Garten ist schoen.,The garden is beautiful.,home,1
-Licht,light,Brightness that lets you see.,noun,Das Licht ist an.,The light is on.,home,1
-Feuer,fire,Heat and flames from burning.,noun,Das Feuer ist warm.,The fire is warm.,nature,2
-Sonne,sun,The star of our solar system.,noun,Die Sonne scheint.,The sun is shining.,nature,1
-Regen,rain,Water falling from clouds.,noun,Heute gibt es Regen.,Today there is rain.,nature,1
-Schnee,snow,White frozen water from the sky.,noun,Der Schnee ist tief.,The snow is deep.,nature,1
-Wind,wind,Moving air outside.,noun,Der Wind ist stark.,The wind is strong.,nature,1
-warm,warm,Having moderate heat.,adjective,Der Tee ist warm.,The tea is warm.,descriptions,1
-kalt,cold,Having low temperature.,adjective,Das Wasser ist kalt.,The water is cold.,descriptions,1
-gross,big,Large in size.,adjective,Das Haus ist gross.,The house is big.,descriptions,1
-klein,small,Little in size.,adjective,Der Hund ist klein.,The dog is small.,descriptions,1
-neu,new,Recently made or bought.,adjective,Mein Auto ist neu.,My car is new.,descriptions,1
-alt,old,Having existed a long time.,adjective,Die Stadt ist alt.,The city is old.,descriptions,1
-gut,good,Of high quality.,adjective,Das Essen ist gut.,The food is good.,descriptions,1
-schlecht,bad,Of low quality.,adjective,Das Wetter ist schlecht.,The weather is bad.,descriptions,1
-schoen,beautiful,Pleasing to look at.,adjective,Der Garten ist schoen.,The garden is beautiful.,descriptions,1
-einfach,easy,Not difficult to do.,adjective,Die Aufgabe ist einfach.,The task is easy.,descriptions,1
-schwer,difficult,Hard to do or carry.,adjective,Die Frage ist schwer.,The question is difficult.,descriptions,1
-lang,long,Having great length or duration.,adjective,Der Film ist lang.,The movie is long.,descriptions,1
-kurz,short,Having little length or duration.,adjective,Der Text ist kurz.,The text is short.,descriptions,1
-frueh,early,Happening before the usual time.,adjective,Ich stehe frueh auf.,I get up early.,time,2
-spaet,late,Happening after the usual time.,adjective,Es ist schon spaet.,It is already late.,time,2
-immer,always,At all times.,adverb,Er kommt immer puenktlich.,He always arrives on time.,frequency,1
-nie,never,At no time.,adverb,Ich trinke nie Cola.,I never drink cola.,frequency,1
-oft,often,Many times.,adverb,Wir gehen oft spazieren.,We often go for a walk.,frequency,1
-manchmal,sometimes,On some occasions.,adverb,Manchmal koche ich Pasta.,Sometimes I cook pasta.,frequency,1
+word,article,translation,short_definition,part_of_speech,example_de,example_translation,tags,difficulty
+Haus,das,house,A building where people live.,noun,Das Haus ist alt.,The house is old.,home,1
+Wasser,das,water,A clear liquid for drinking.,noun,Ich trinke Wasser.,I drink water.,daily-life,1
+gehen,,to go,To move from one place to another.,verb,Wir gehen nach Hause.,We are going home.,verbs,1
+Buch,das,book,A written work with pages.,noun,Das Buch ist interessant.,The book is interesting.,study,1
+heute,,today,The current day.,adverb,Heute lerne ich Deutsch.,Today I study German.,time,1
+sprechen,,to speak,To say words aloud.,verb,Sie spricht sehr langsam.,She speaks very slowly.,verbs,1
+Freund,der,friend,A person you like and trust.,noun,Mein Freund wohnt in Berlin.,My friend lives in Berlin.,people,1
+schnell,,fast,Moving with high speed.,adjective,Der Zug ist sehr schnell.,The train is very fast.,descriptions,2
+essen,,to eat,To consume food.,verb,Wir essen zusammen.,We eat together.,verbs,1
+Fenster,das,window,An opening in a wall with glass.,noun,Das Fenster ist offen.,The window is open.,home,1
+Auto,das,car,A road vehicle with an engine.,noun,Das Auto ist neu.,The car is new.,transport,1
+Baum,der,tree,A tall plant with a trunk.,noun,Der Baum ist hoch.,The tree is tall.,nature,1
+Stadt,die,city,A large town with many people.,noun,Die Stadt ist laut.,The city is loud.,places,1
+Dorf,das,village,A small settlement in the countryside.,noun,Mein Dorf ist ruhig.,My village is quiet.,places,1
+Schule,die,school,A place where people learn.,noun,Die Schule beginnt um acht.,School starts at eight.,study,1
+Lehrer,der,teacher,A person who teaches students.,noun,Der Lehrer ist nett.,The teacher is nice.,people,1
+Student,der,student,A person who studies.,noun,Der Student liest viel.,The student reads a lot.,people,1
+Arbeit,die,work,Activity done for a job.,noun,Die Arbeit ist schwer.,The work is hard.,work,1
+lernen,,to learn,To gain knowledge or skill.,verb,Ich lerne jeden Tag.,I learn every day.,study,1
+schreiben,,to write,To put words on paper or screen.,verb,Er schreibt einen Brief.,He writes a letter.,verbs,1
+lesen,,to read,To look at written words and understand them.,verb,Sie liest ein Buch.,She reads a book.,verbs,1
+sehen,,to see,To notice with the eyes.,verb,Ich sehe den Hund.,I see the dog.,verbs,1
+hoeren,,to hear,To notice sound with the ears.,verb,Wir hoeren Musik.,We hear music.,verbs,1
+kommen,,to come,To move toward a place.,verb,Er kommt spaet.,He comes late.,verbs,1
+machen,,to do,To perform an action.,verb,Was machst du heute?,What are you doing today?,verbs,1
+geben,,to give,To hand something to someone.,verb,Ich gebe dir das Buch.,I give you the book.,verbs,2
+nehmen,,to take,To get something into your hand.,verb,Nimm bitte den Stuhl.,Please take the chair.,verbs,2
+finden,,to find,To discover something.,verb,Ich finde den Schluessel.,I find the key.,verbs,2
+fragen,,to ask,To request information.,verb,Sie fragt den Lehrer.,She asks the teacher.,verbs,1
+antworten,,to answer,To reply to a question.,verb,Er antwortet sofort.,He answers at once.,verbs,2
+wohnen,,to live,To have your home in a place.,verb,Wir wohnen in Wien.,We live in Vienna.,verbs,1
+leben,,to live,To be alive or exist.,verb,Sie lebt allein.,She lives alone.,verbs,2
+lieben,,to love,To feel deep affection.,verb,Ich liebe diesen Film.,I love this movie.,feelings,1
+brauchen,,to need,To require something.,verb,Wir brauchen mehr Zeit.,We need more time.,verbs,1
+kaufen,,to buy,To pay money for something.,verb,Ich kaufe Brot.,I buy bread.,shopping,1
+verkaufen,,to sell,To exchange something for money.,verb,Er verkauft sein Fahrrad.,He sells his bicycle.,shopping,2
+zahlen,,to pay,To give money for something.,verb,Ich zahle mit Karte.,I pay by card.,shopping,1
+kochen,,to cook,To prepare food with heat.,verb,Meine Mutter kocht Suppe.,My mother cooks soup.,food,1
+trinken,,to drink,To take liquid into the mouth.,verb,Wir trinken Kaffee.,We drink coffee.,food,1
+Brot,das,bread,A baked food made from flour.,noun,Das Brot ist frisch.,The bread is fresh.,food,1
+Milch,die,milk,A white drink from animals.,noun,Die Milch ist kalt.,The milk is cold.,food,1
+Kaffee,der,coffee,A dark hot drink.,noun,Der Kaffee ist heiss.,The coffee is hot.,food,1
+Tee,der,tea,A hot drink made from leaves.,noun,Ich trinke Tee am Abend.,I drink tea in the evening.,food,1
+Apfel,der,apple,A round fruit with a stem.,noun,Der Apfel ist rot.,The apple is red.,food,1
+Hund,der,dog,A common domestic animal.,noun,Der Hund schlaeft.,The dog is sleeping.,animals,1
+Katze,die,cat,A small domestic animal.,noun,Die Katze spielt.,The cat is playing.,animals,1
+Vogel,der,bird,An animal with feathers and wings.,noun,Der Vogel singt.,The bird sings.,animals,1
+Fisch,der,fish,An animal that lives in water.,noun,Der Fisch schwimmt schnell.,The fish swims fast.,animals,1
+Kind,das,child,A young person.,noun,Das Kind lacht.,The child laughs.,people,1
+Mann,der,man,An adult male person.,noun,Der Mann wartet hier.,The man is waiting here.,people,1
+Frau,die,woman,An adult female person.,noun,Die Frau arbeitet im Buero.,The woman works in the office.,people,1
+Familie,die,family,A group of close relatives.,noun,Meine Familie ist gross.,My family is big.,people,1
+Mutter,die,mother,A female parent.,noun,Meine Mutter liest gern.,My mother likes reading.,people,1
+Vater,der,father,A male parent.,noun,Mein Vater kocht heute.,My father is cooking today.,people,1
+Bruder,der,brother,A male sibling.,noun,Mein Bruder spielt Fussball.,My brother plays football.,people,1
+Schwester,die,sister,A female sibling.,noun,Meine Schwester singt gut.,My sister sings well.,people,1
+Tag,der,day,A period of twenty four hours.,noun,Der Tag ist lang.,The day is long.,time,1
+Nacht,die,night,The dark part of the day.,noun,Die Nacht ist kalt.,The night is cold.,time,1
+Morgen,der,morning,The early part of the day.,noun,Am Morgen trinke ich Kaffee.,In the morning I drink coffee.,time,1
+Abend,der,evening,The later part of the day.,noun,Am Abend lese ich.,In the evening I read.,time,1
+Woche,die,week,A period of seven days.,noun,Die Woche ist kurz.,The week is short.,time,1
+Monat,der,month,One of twelve parts of a year.,noun,Dieser Monat ist stressig.,This month is stressful.,time,2
+Jahr,das,year,A period of twelve months.,noun,Das Jahr geht schnell vorbei.,The year passes quickly.,time,1
+Zeit,die,time,Measured passing of moments.,noun,Ich habe keine Zeit.,I have no time.,time,1
+Uhr,die,clock,A device that shows time.,noun,Die Uhr ist teuer.,The clock is expensive.,time,1
+Minute,die,minute,Sixty seconds of time.,noun,Warte eine Minute.,Wait one minute.,time,1
+Strasse,die,street,A public road in a town.,noun,Die Strasse ist voll.,The street is full.,places,1
+Weg,der,way,A route or direction.,noun,Das ist der richtige Weg.,That is the right way.,places,1
+Bahnhof,der,station,A place where trains stop.,noun,Der Bahnhof ist nah.,The station is near.,transport,1
+Zug,der,train,A vehicle that runs on rails.,noun,Der Zug kommt gleich.,The train arrives soon.,transport,1
+Bus,der,bus,A large road vehicle for many people.,noun,Der Bus ist spaet.,The bus is late.,transport,1
+Fahrrad,das,bicycle,A vehicle with two wheels.,noun,Mein Fahrrad ist blau.,My bicycle is blue.,transport,1
+Flugzeug,das,airplane,A vehicle that flies in the sky.,noun,Das Flugzeug landet jetzt.,The airplane is landing now.,transport,2
+Zimmer,das,room,A part of a building inside walls.,noun,Mein Zimmer ist klein.,My room is small.,home,1
+Tuer,die,door,A movable barrier for an entrance.,noun,Die Tuer ist zu.,The door is closed.,home,1
+Tisch,der,table,A piece of furniture with a flat top.,noun,Das Buch liegt auf dem Tisch.,The book lies on the table.,home,1
+Stuhl,der,chair,A seat for one person.,noun,Der Stuhl ist bequem.,The chair is comfortable.,home,1
+Bett,das,bed,A piece of furniture for sleeping.,noun,Das Bett ist weich.,The bed is soft.,home,1
+Kueche,die,kitchen,A room where food is prepared.,noun,Die Kueche ist sauber.,The kitchen is clean.,home,1
+Garten,der,garden,A piece of ground for plants.,noun,Der Garten ist schoen.,The garden is beautiful.,home,1
+Licht,das,light,Brightness that lets you see.,noun,Das Licht ist an.,The light is on.,home,1
+Feuer,das,fire,Heat and flames from burning.,noun,Das Feuer ist warm.,The fire is warm.,nature,2
+Sonne,die,sun,The star of our solar system.,noun,Die Sonne scheint.,The sun is shining.,nature,1
+Regen,der,rain,Water falling from clouds.,noun,Heute gibt es Regen.,Today there is rain.,nature,1
+Schnee,der,snow,White frozen water from the sky.,noun,Der Schnee ist tief.,The snow is deep.,nature,1
+Wind,der,wind,Moving air outside.,noun,Der Wind ist stark.,The wind is strong.,nature,1
+warm,,warm,Having moderate heat.,adjective,Der Tee ist warm.,The tea is warm.,descriptions,1
+kalt,,cold,Having low temperature.,adjective,Das Wasser ist kalt.,The water is cold.,descriptions,1
+gross,,big,Large in size.,adjective,Das Haus ist gross.,The house is big.,descriptions,1
+klein,,small,Little in size.,adjective,Der Hund ist klein.,The dog is small.,descriptions,1
+neu,,new,Recently made or bought.,adjective,Mein Auto ist neu.,My car is new.,descriptions,1
+alt,,old,Having existed a long time.,adjective,Die Stadt ist alt.,The city is old.,descriptions,1
+gut,,good,Of high quality.,adjective,Das Essen ist gut.,The food is good.,descriptions,1
+schlecht,,bad,Of low quality.,adjective,Das Wetter ist schlecht.,The weather is bad.,descriptions,1
+schoen,,beautiful,Pleasing to look at.,adjective,Der Garten ist schoen.,The garden is beautiful.,descriptions,1
+einfach,,easy,Not difficult to do.,adjective,Die Aufgabe ist einfach.,The task is easy.,descriptions,1
+schwer,,difficult,Hard to do or carry.,adjective,Die Frage ist schwer.,The question is difficult.,descriptions,1
+lang,,long,Having great length or duration.,adjective,Der Film ist lang.,The movie is long.,descriptions,1
+kurz,,short,Having little length or duration.,adjective,Der Text ist kurz.,The text is short.,descriptions,1
+frueh,,early,Happening before the usual time.,adjective,Ich stehe frueh auf.,I get up early.,time,2
+spaet,,late,Happening after the usual time.,adjective,Es ist schon spaet.,It is already late.,time,2
+immer,,always,At all times.,adverb,Er kommt immer puenktlich.,He always arrives on time.,frequency,1
+nie,,never,At no time.,adverb,Ich trinke nie Cola.,I never drink cola.,frequency,1
+oft,,often,Many times.,adverb,Wir gehen oft spazieren.,We often go for a walk.,frequency,1
+manchmal,,sometimes,On some occasions.,adverb,Manchmal koche ich Pasta.,Sometimes I cook pasta.,frequency,1

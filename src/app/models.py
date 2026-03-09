@@ -7,6 +7,7 @@ from dataclasses import dataclass
 class WordRecord:
     id: int
     word: str
+    article: str | None
     translation: str | None
     short_definition: str | None
     part_of_speech: str | None
@@ -20,3 +21,9 @@ class WordRecord:
     created_at: str
     updated_at: str
     is_active: int
+
+    @property
+    def display_word(self) -> str:
+        if self.article:
+            return f"{self.article} {self.word}"
+        return self.word
