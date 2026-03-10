@@ -11,7 +11,7 @@ The app:
 - picks the next word with a simple least-shown selector
 - sends one native macOS notification at a time
 
-The starter CSV currently contains `105` words in [data/words.csv](/Users/darkcreation/Documents/german-word-notifier/data/words.csv).
+The starter CSV currently contains `105` words in [data/words.csv](/Users/darkcreation/Documents/git_repos/german-word-notifier/data/words.csv).
 
 ## Requirements
 
@@ -21,7 +21,7 @@ The starter CSV currently contains `105` words in [data/words.csv](/Users/darkcr
 ## Setup
 
 ```bash
-cd /Users/darkcreation/Documents/german-word-notifier
+cd /Users/darkcreation/Documents/git_repos/german-word-notifier
 python3 -m venv .venv
 source .venv/bin/activate
 cp .env.example .env
@@ -55,7 +55,7 @@ Important:
 ## First run
 
 ```bash
-cd /Users/darkcreation/Documents/german-word-notifier
+cd /Users/darkcreation/Documents/git_repos/german-word-notifier
 ./gwn init-db
 ./gwn import-csv data/words.csv
 ./gwn run-once --dry-run
@@ -147,12 +147,12 @@ Inspect current state:
 
 ## Hourly scheduling with launchd
 
-A ready plist template is included at [launchd/com.darkcreation.gwn.hourly.plist](/Users/darkcreation/Documents/german-word-notifier/launchd/com.darkcreation.gwn.hourly.plist).
+A ready plist template is included at [launchd/com.darkcreation.gwn.hourly.plist](/Users/darkcreation/Documents/git_repos/german-word-notifier/launchd/com.darkcreation.gwn.hourly.plist).
 
 Install and load it:
 
 ```bash
-cp /Users/darkcreation/Documents/german-word-notifier/launchd/com.darkcreation.gwn.hourly.plist ~/Library/LaunchAgents/
+cp /Users/darkcreation/Documents/git_repos/german-word-notifier/launchd/com.darkcreation.gwn.hourly.plist ~/Library/LaunchAgents/
 launchctl unload ~/Library/LaunchAgents/com.darkcreation.gwn.hourly.plist 2>/dev/null
 launchctl load ~/Library/LaunchAgents/com.darkcreation.gwn.hourly.plist
 launchctl start com.darkcreation.gwn.hourly

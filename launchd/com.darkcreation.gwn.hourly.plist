@@ -16,11 +16,11 @@
     <key>EnvironmentVariables</key>
     <dict>
       <key>PYTHONPATH</key>
-      <string>/Users/darkcreation/Documents/german-word-notifier/src</string>
+      <string>/Users/darkcreation/Documents/git_repos/german-word-notifier/src</string>
     </dict>
 
     <key>WorkingDirectory</key>
-    <string>/Users/darkcreation/Documents/german-word-notifier</string>
+    <string>/Users/darkcreation/Documents/git_repos/german-word-notifier</string>
 
     <key>StartInterval</key>
     <integer>3600</integer>
