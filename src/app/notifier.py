@@ -15,17 +15,11 @@ class NotificationError(RuntimeError):
 def build_notification_payload(word: WordRecord, settings: Settings) -> tuple[str, str, str]:
     title = f"{settings.notification_title_prefix}{word.display_word}"
     subtitle = word.translation or word.part_of_speech or "German word"
-
-    body_parts: list[str] = []
-    if word.short_definition:
-        body_parts.append(word.short_definition.strip())
+    body = ""
     if settings.include_example and word.example_de:
-        body_parts.append(f"Example: {word.example_de.strip()}")
-    body = " ".join(body_parts).strip() or "Open the CLI for details."
-
-    if len(body) > settings.max_body_length:
-        body = body[: settings.max_body_length - 1].rstrip() + "…"
-
+        body = word.example_de.strip()
+        if len(body) > settings.max_body_length:
+            body = body[: settings.max_body_length - 1].rstrip() + "…"
     return title, subtitle, body
 
 

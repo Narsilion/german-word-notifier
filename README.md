@@ -1,6 +1,6 @@
 # German Word Notifier
 
-Local-first Python MVP for macOS that shows native notifications with a German word, its article when available, its translation, and a short definition, and can open a local study page when you click the notification.
+Local-first Python MVP for macOS that shows native notifications with a German word, its article when available, and its English translation, and can open a local study page when you click the notification.
 
 ## What it does
 
@@ -36,6 +36,7 @@ They appear in macOS:
 - as a banner in the top-right corner
 - in Notification Center if you miss the banner
 - clicking the notification or the `Open Card` action opens a generated HTML study page for that word
+- the generated study page includes pronunciation buttons for the word and the German example sentence when supported by the browser
 
 If you do not see them:
 
@@ -104,19 +105,19 @@ Selects the next word and prints the generated notification payload:
 - body
 - page path
 
-This is the safest way to verify the selector and message formatting.
+This is the safest way to verify the selector and message formatting. The notification shows the English translation and, when available, the German example sentence in the body.
 
 `./gwn run-once`
 
 Selects the next word from the database and sends a real macOS notification.
 
-`./gwn show-notification --word Haus --article das --translation house --definition "A building for people to live in."`
+`./gwn show-notification --word Haus --article das --translation house`
 
 Sends a manual test notification without using the database selector.
 
 `./gwn show-notification --word Haus --article das --translation house --definition "A building for people to live in." --example "Das Haus ist alt."`
 
-Same as above, but also includes one example sentence.
+Extra definition values may still be stored, but they are no longer shown. The German example sentence is still shown in the notification and generated study page when available.
 
 ## Useful examples
 
@@ -132,10 +133,12 @@ Open the generated HTML card directly:
 open .generated-pages/das-haus.html
 ```
 
+Inside the page, click `Pronounce` to hear the word or `Pronounce Example` to hear the German example sentence with the browser's available German voice.
+
 Send a manual test notification:
 
 ```bash
-./gwn show-notification --word Haus --article das --translation house --definition "A building for people to live in." --example "Das Haus ist alt."
+./gwn show-notification --word Haus --article das --translation house
 ```
 
 Inspect current state:
